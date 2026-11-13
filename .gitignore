@@ -14,3 +14,4 @@ service-account*.json
 *.p12
 *.pfx
 *.jks
+/AGENTS.override.md
