@@ -1,0 +1,8 @@
+{
+  "idea-capture": {
+    "icon": "󰎞",
+    "label": "Idea Capture",
+    "description": "Save a thought to Inbox for later review",
+    "action": "omarchy-shell shell summon eugene.daily-capture \"{\\\"date\\\":\\\"$(date +%F)\\\"}\""
+  }
+}

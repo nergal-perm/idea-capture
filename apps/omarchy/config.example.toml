@@ -1,0 +1,6 @@
+# Copy outside the repository and replace these neutral example values.
+vault = "~/notes"
+inbox = "inbox"
+lock_file = "~/notes-sync/capture.lock"
+# Optional: omit to find codex on PATH.
+# codex = "~/tools/codex"

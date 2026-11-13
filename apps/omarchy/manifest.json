@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "eugene.daily-capture",
+  "name": "Inbox Capture",
+  "version": "0.4.0",
+  "author": "Idea Capture contributors",
+  "description": "Save a raw Inbox note immediately, then optionally generate its short filename in the background.",
+  "kinds": [
+    "overlay"
+  ],
+  "keepLoaded": true,
+  "entryPoints": {
+    "overlay": "Capture.qml"
+  }
+}

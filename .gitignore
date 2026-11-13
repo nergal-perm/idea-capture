@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+config.toml
+config.local.toml
+*.local.toml
+secrets/
+credentials*.json
+service-account*.json
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
