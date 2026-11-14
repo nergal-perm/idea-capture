@@ -4,6 +4,10 @@ The language of capturing source material and original thoughts for later proces
 
 ## Language
 
+**Capture draft**:
+Unsubmitted input in the capture form, retained in memory when the form is dismissed so the author can return to it. It is not a saved capture, has no guaranteed lifetime or application-managed expiry, and is cleared when the application restarts.
+_Avoid_: Saved capture (for unsubmitted input)
+
 **Capture**:
 A single saved submission containing up to one source-material block, up to one original comment, and any attachments, with at least one part present. Its parts belong together and produce one fleeting note.
 _Avoid_: Note (before delivery)
@@ -16,7 +20,7 @@ The time a capture is saved on its originating device, including that device's l
 _Avoid_: Context date (as a separate date)
 
 **Source material**:
-Text, a link, and available source metadata received from another application. It remains distinguishable from the author's own comment.
+Text, including an exact selected passage, a link, and available identifying context for material from another application, with context supplied by the source or the author. It remains distinguishable from the author's own comment.
 _Avoid_: Comment
 
 **Comment**:

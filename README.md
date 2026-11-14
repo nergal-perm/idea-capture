@@ -13,6 +13,11 @@ including OCR and PDF text extraction, is outside the agreed scope.
 All three clients support optional categorization, following the existing
 Omarchy plugin. They prioritize fast capture and provide delivery status and
 retry; post-capture content viewing and editing are not required.
+Fast entry opens the capture form; the main application opens a separate
+delivery queue. Selected source text and available identifying context remain
+separate from the author's thought; missing titles or links can be added
+optionally without blocking capture. Unsaved drafts remain in memory only.
+See the [capture interaction](docs/capture-interaction.md).
 Each local save creates an immutable capture, without content-based
 deduplication. Capture time preserves the originating device's local date and
 UTC offset; there is no separate context date. Once delivery is confirmed,
