@@ -13,6 +13,11 @@ including OCR and PDF text extraction, is outside the agreed scope.
 All three clients support optional categorization, following the existing
 Omarchy plugin. They prioritize fast capture and provide delivery status and
 retry; post-capture content viewing and editing are not required.
+Each local save creates an immutable capture, without content-based
+deduplication. Capture time preserves the originating device's local date and
+UTC offset; there is no separate context date. Once delivery is confirmed,
+clients remove the capture and its local data without a success notification
+or delivered history. See the [capture lifecycle](docs/capture-lifecycle.md).
 Speech processing is coordinated by the shared backend; recognition may run
 locally or use a third-party service. The recognition method remains open.
 Delivery is confirmed only after the note exists; retries must not create

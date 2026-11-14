@@ -5,8 +5,15 @@ The language of capturing source material and original thoughts for later proces
 ## Language
 
 **Capture**:
-A single saved submission containing one or more of source material, attachments, and an original comment. Its parts belong together and produce one fleeting note.
+A single saved submission containing up to one source-material block, up to one original comment, and any attachments, with at least one part present. Its parts belong together and produce one fleeting note.
 _Avoid_: Note (before delivery)
+
+**Category**:
+An optional classification of a capture as a task, event, fact, emotion, idea, or question. A capture has at most one category, applying to the whole capture.
+
+**Capture time**:
+The time a capture is saved on its originating device, including that device's local date and UTC offset, also treated as the time its thought arose. There is no separately assigned thought date or context date.
+_Avoid_: Context date (as a separate date)
 
 **Source material**:
 Text, a link, and available source metadata received from another application. It remains distinguishable from the author's own comment.
@@ -25,5 +32,5 @@ The temporary Inbox item created from a capture for later processing in Personal
 _Avoid_: Capture (for the resulting Inbox item)
 
 **Delivered**:
-The state in which creation of the resulting fleeting note has been confirmed. Network availability or receipt by the server alone does not establish delivery.
+The outcome in which creation of the resulting fleeting note has been confirmed. Network availability or receipt by the server alone does not establish delivery.
 _Avoid_: Sent, uploaded (as synonyms for delivered)
