@@ -23,6 +23,9 @@ locally or use a third-party service. The recognition method remains open.
 For recorded comments, the initial note links the preserved audio and delivery
 does not wait for recognition. Background transcription later supplements the
 note with text or an error, retaining the original-audio link.
+Comments may combine typed text and one recording. Speech supports Russian,
+English, and mixed speech, with a five-minute recording limit and faithful
+transcription rather than summarization. See the [speech policy](docs/speech.md).
 Delivery is confirmed only after the note exists; retries must not create
 duplicate notes. Captures with attachments require every original file to be
 preserved and linked before delivery is confirmed; the note appears in the

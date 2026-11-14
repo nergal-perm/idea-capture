@@ -113,8 +113,8 @@ depend on the client retaining data after acknowledgement.
 On successful recognition, supplement the note with the recognized comment,
 retaining the original-audio link. On recognition failure, describe the failure
 in the note so the owner can decide what to do next. Recognition failure does
-not reverse delivery. Speech languages, quality, timing, and other pipeline
-details belong to [issue #8](https://github.com/nergal-perm/idea-capture/issues/8).
+not reverse delivery. Speech languages, quality, timing, and failure behavior
+follow the [speech policy](speech.md).
 
 ### Note changes during recognition
 
@@ -133,8 +133,9 @@ possible, preserve their changes and record the conflict rather than overwrite.
 Once a final recognition error has been written to the note, the background task
 ends. Do not retry indefinitely, reverse delivery, or return the capture to the
 client queue. The client does not track post-delivery recognition. The note's
-error and original-audio link let the owner decide what to do next. Whether to
-make bounded internal retries before declaring a final error belongs to issue #8.
+error and original-audio link let the owner decide what to do next. Make bounded
+internal retries for transient recognition failures before declaring a final
+error; see the [speech policy](speech.md).
 
 ## Implementation and acceptance follow-through
 
@@ -142,8 +143,8 @@ Exact API endpoints and schemas, identifiers and checksum encodings, numeric
 retry intervals, durable-store technology, publication/recovery algorithms,
 safe note-update mechanics, HTTPS setup, and platform scheduling mechanisms
 are technical design details constrained by this contract. Stack choices belong
-to issue #10 and staged acceptance to issue #11; speech-specific behavior
-remaining in issue #8 must respect delivery before recognition.
+to issue #10 and staged acceptance to issue #11; speech implementation must
+respect the [speech policy](speech.md) and delivery before recognition.
 
 Validate offline saving and reconnects, ordinary client/backend restarts, lost
 responses, concurrent retries, conflicting IDs, unsupported versions, file

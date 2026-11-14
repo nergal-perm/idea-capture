@@ -20,8 +20,12 @@ Text, a link, and available source metadata received from another application. I
 _Avoid_: Comment
 
 **Comment**:
-The author's own thought accompanying source material or attachments, or submitted on its own. It may be typed or recorded as speech.
+The author's own thought accompanying source material or attachments, or submitted on its own. One comment may combine typed text and one speech recording; the typed text and transcription remain distinguishable.
 _Avoid_: Source material
+
+**Transcription**:
+A rendering of a recorded comment as text, staying as close as possible to what was said. Summarization, paraphrasing, and later interpretation belong to note processing outside Idea Capture.
+_Avoid_: Summary, paraphrase
 
 **Attachment**:
 An original file saved as part of a capture and linked from its resulting fleeting note, including audio supplied as a file rather than recorded as a spoken comment. Preserving a file does not imply extracting or interpreting its content.
