@@ -13,6 +13,12 @@ including OCR and PDF text extraction, is outside the agreed scope.
 All three clients support optional categorization, following the existing
 Omarchy plugin. They prioritize fast capture and provide delivery status and
 retry; post-capture content viewing and editing are not required.
+Native OS integration is required; client UI may use platform toolkits or a
+cross-platform framework such as Compose. A native Share adapter may hand work
+to the shared executable core through a local service protocol. The selected
+stack uses Kotlin/KMP, Ktor, Compose and SQLite, with a small Swift macOS Share
+form and separate JVM desktop service/UI; see the
+[technology boundaries](docs/technology-boundaries.md).
 Fast entry opens the capture form; the main application opens a separate
 delivery queue. Selected source text and available identifying context remain
 separate from the author's thought; missing titles or links can be added
@@ -95,8 +101,10 @@ See the [plugin README](apps/omarchy/README.md) for installation and validation.
 The [Wayfinder map](https://github.com/nergal-perm/idea-capture/issues/1) tracks
 the decisions leading to an agreed specification for the entire tool and an
 ordered implementation plan. The product vision can evolve along the way.
-The stack, detailed API schemas and delivery implementation, and remaining speech
-pipeline choices are open. The delivery contract chooses HTTPS over Tailscale,
+The [stack decision](https://github.com/nergal-perm/idea-capture/issues/10#issuecomment-6883781978)
+is owner-approved. Detailed API schemas and delivery implementation, exact
+compatible dependencies, and remaining speech pipeline choices still need
+implementation-stage specification. The delivery contract chooses HTTPS over Tailscale,
 versioned JSON capture descriptions, separate file uploads, and status queries.
 See [GLOSSARY.md](GLOSSARY.md) for domain terminology.
 
