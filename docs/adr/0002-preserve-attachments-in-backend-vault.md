@@ -15,3 +15,12 @@ synchronization rules or introduce a separate attachment-serving lifecycle.
 These boundaries were agreed during
 [issue #6](https://github.com/nergal-perm/idea-capture/issues/6); see the
 [attachment policy](../attachments.md) for limits, intake, and cleanup rules.
+
+## Refinement during issue #7
+
+The owner subsequently chose post-delivery transcription for recorded spoken
+comments: preserve and link the audio in the initial note, confirm delivery,
+then add recognized text or a recognition error in the background, retaining
+the source link. This is an explicit exception to stopping all backend work at
+delivery; it does not bring vault synchronization or general note processing
+into scope. See the [delivery contract](../delivery.md).

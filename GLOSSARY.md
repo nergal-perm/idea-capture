@@ -28,9 +28,13 @@ An original file saved as part of a capture and linked from its resulting fleeti
 _Avoid_: Extracted content
 
 **Fleeting note**:
-The temporary Inbox item created from a capture for later processing in PersonalOS. Its subsequent processing and the fate of its linked attachments belong to normal vault work, outside Idea Capture.
+The temporary Inbox item created from a capture for later processing in PersonalOS. Backend transcription may supplement it after delivery; further vault processing and the fate of its linked originals are outside Idea Capture.
 _Avoid_: Capture (for the resulting Inbox item)
 
 **Delivered**:
-The outcome in which creation of the resulting fleeting note in the backend's copy of the vault, with all of its attachments preserved and linked, has been confirmed. Further vault synchronization and processing are outside Idea Capture.
+The outcome in which creation of the resulting fleeting note in the backend's copy of the vault, with all of its original files preserved and linked, has been confirmed. A recorded comment is delivered through its preserved audio link; transcription may follow later.
 _Avoid_: Sent, uploaded (as synonyms for delivered)
+
+**Uncertain delivery**:
+A capture outcome in which it cannot be established whether the fleeting note was created before an interruption. It requires explicit owner resolution before delivery can be confirmed or publication attempted again.
+_Avoid_: Failed delivery (when the outcome is unknown)

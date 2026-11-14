@@ -30,10 +30,12 @@ extension when present and adding a distinguishing suffix when needed. Files
 with identical names remain separate attachments and never overwrite each other.
 Delivery retries reuse the same files; a new capture gets its own copies.
 
-Idea Capture's responsibility ends with confirmed creation of the complete note
-and preservation of all linked attachments in the backend's copy of the vault.
-Further vault synchronization, availability on other devices, and processing of
-notes and attachments are outside its scope. Attachment acceptance and storage
+Delivery responsibility ends with confirmed creation of the complete note and
+preservation of all linked originals in the backend's copy of the vault.
+Post-delivery transcription of recorded comments is the explicit additional
+backend task described below. Further vault synchronization, availability on
+other devices, and general processing of notes and attachments are outside
+Idea Capture's scope. Attachment acceptance and storage
 do not depend on downstream synchronization rules; no synchronization changes
 or compatibility checks are required by Idea Capture.
 
@@ -41,8 +43,10 @@ or compatibility checks are required by Idea Capture.
 
 Do not automatically expire delivered notes or attachments. Their subsequent
 processing, movement, retention, and deletion belong to normal vault work,
-outside Idea Capture. Moving or deleting a note does not trigger attachment
-deletion by Idea Capture.
+outside Idea Capture. The explicit exception is backend transcription of a
+recorded spoken comment and addition of its result to the delivered note; see
+the [delivery contract](delivery.md). Moving or deleting a note does not trigger
+attachment deletion by Idea Capture.
 
 As already agreed in the [capture lifecycle](capture-lifecycle.md), the client
 deletes its local capture and data after confirmed delivery. Before confirmation,
@@ -95,5 +99,7 @@ belong to issue #7; this permission does not introduce expiry of saved captures.
 
 An audio file supplied as an attachment is an original file: preserve it without
 speech recognition, like any other attachment. A comment recorded through the
-client's spoken-comment feature follows the separate speech pipeline. Retention
-of that recording is a speech-policy decision, not an original-attachment policy.
+client's spoken-comment feature follows the separate speech pipeline. The
+recording is preserved and linked in the initial delivered note; successful
+background transcription adds text while retaining that original-audio link.
+Further speech-pipeline details belong to issue #8.

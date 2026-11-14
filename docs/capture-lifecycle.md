@@ -66,3 +66,6 @@ Client cleanup after acknowledgement removes the normal opportunity to retry,
 but cannot cover a lost acknowledgement: the client still holds the capture in
 that case. Delivery acknowledgement and retry recognition mechanisms belong to
 [issue #7](https://github.com/nergal-perm/idea-capture/issues/7).
+
+The [delivery contract](delivery.md) records the agreed persistent
+delivery records, independent backend processing, and delivery ordering rules.
