@@ -21,16 +21,19 @@ or delivered history. See the [capture lifecycle](docs/capture-lifecycle.md).
 Speech processing is coordinated by the shared backend; recognition may run
 locally or use a third-party service. The recognition method remains open.
 Delivery is confirmed only after the note exists; retries must not create
-duplicate notes. Attachment completeness and confirmation semantics remain to
-be specified.
+duplicate notes. Captures with attachments require every original file to be
+preserved and linked before delivery is confirmed; the note appears in the
+Inbox only after all attachments have been saved. See the
+[attachment policies](docs/attachments.md); confirmation mechanisms remain open.
 
 All entry points must use a shared backend processing mechanism, including
 when a client and the backend run on the same machine. The initial server is
 the owner's existing local machine, which may also remain the final host.
 Captures wait in client queues while it is asleep or powered off; availability
 independently of user workstations is no longer required. The backend starts
-after user login and writes into the existing local Inbox, using the existing
-vault synchronization. See the
+after user login and writes into the existing local Inbox. Further vault
+synchronization and processing of notes and attachments are outside Idea
+Capture's scope. See the
 [architecture decision](docs/adr/0001-workstation-backend-and-inbox-lifecycle.md)
 and the [server placement and operations resolution](https://github.com/nergal-perm/idea-capture/issues/4)
 for the deployment decisions.
@@ -79,7 +82,7 @@ See the [plugin README](apps/omarchy/README.md) for installation and validation.
 The [Wayfinder map](https://github.com/nergal-perm/idea-capture/issues/1) tracks
 the decisions leading to an agreed specification for the entire tool and an
 ordered implementation plan. The product vision can evolve along the way.
-The stack, exchange protocol, attachment policies, and speech pipeline
+The stack, exchange protocol, attachment delivery mechanisms, and speech pipeline
 remain open decisions. See [GLOSSARY.md](GLOSSARY.md) for domain terminology.
 
 The first implementation stage will be text-only capture through Omarchy,

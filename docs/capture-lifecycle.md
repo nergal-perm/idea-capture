@@ -51,6 +51,10 @@ leave the client interface unopened for long periods. Cleanup does not depend
 on opening the interface or seeing a confirmation. Delivered remains a domain
 outcome, not a persistent client-visible state.
 
+For captures with attachments, confirmation requires all original files to be
+preserved and linked from the note; the note appears in the Inbox only after
+all attachments have been saved. See the [attachment policies](attachments.md).
+
 The owner can discard input before saving. After saving, a capture cannot be
 cancelled; unwanted fleeting notes can be deleted during Inbox processing.
 

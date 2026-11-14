@@ -24,13 +24,13 @@ The author's own thought accompanying source material or attachments, or submitt
 _Avoid_: Source material
 
 **Attachment**:
-An original file saved as part of a capture and linked from its resulting fleeting note. Preserving a file does not imply extracting or interpreting its content.
+An original file saved as part of a capture and linked from its resulting fleeting note, including audio supplied as a file rather than recorded as a spoken comment. Preserving a file does not imply extracting or interpreting its content.
 _Avoid_: Extracted content
 
 **Fleeting note**:
-The temporary Inbox item created from a capture for later processing in PersonalOS. One note may refer to multiple attachments; after processing, retained material belongs in permanent locations under the vault's storage rules.
+The temporary Inbox item created from a capture for later processing in PersonalOS. Its subsequent processing and the fate of its linked attachments belong to normal vault work, outside Idea Capture.
 _Avoid_: Capture (for the resulting Inbox item)
 
 **Delivered**:
-The outcome in which creation of the resulting fleeting note has been confirmed. Network availability or receipt by the server alone does not establish delivery.
+The outcome in which creation of the resulting fleeting note in the backend's copy of the vault, with all of its attachments preserved and linked, has been confirmed. Further vault synchronization and processing are outside Idea Capture.
 _Avoid_: Sent, uploaded (as synonyms for delivered)
