@@ -111,9 +111,10 @@ See [GLOSSARY.md](GLOSSARY.md) for domain terminology.
 The first implementation stage will be text-only capture through Omarchy,
 durable local saving, shared backend processing, Inbox creation, and confirmed
 delivery. Attachments, server-side voice, Android, and macOS remain required
-later stages; their order and acceptance gates will be decided through the map.
+later stages. Their order, prerequisites and acceptance gates are recorded in
+the owner-approved [implementation roadmap](docs/roadmap.md).
 
 The project will also serve as a trial of Matt Pocock's workflow from
 Software Factories for Real Engineers. The trial includes a workflow review
-after the first end-to-end stage; its evaluation criteria will be specified in
-the roadmap.
+after the first end-to-end stage; its accepted evaluation criteria are recorded
+in the roadmap.
